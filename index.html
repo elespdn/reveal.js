@@ -24,6 +24,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+			<!--
 				<section>
 					<h2>La collazione semi-automatica dei testi medioevali tra linguistica e algoritmi<h2>
 					<br/>
@@ -51,20 +52,32 @@
 						</ul>
 					</section>				
 				</section>
+				-->
 				
 				<section id="collazione">
 					<section>
-						<h2>La collazione semi-automatica dei testi medioevali. <br/>Il ruolo del ms. di base<h2>
+						<h2>La collazione semi-automatica dei testi medioevali. <br/>Il ruolo del ms. base<h2>
 						<br/>
 						<h4>AIUCD - Venezia, 7-9 settembre 2016</h4>
 					</section>	
-					
+				</section>
+				
+				<section>	
 					<section>
 						<h2><span class="fragment highlight-green" data-fragment-index="2">Uso consapevole</span><br/>degli<br/><span class="fragment highlight-blue"data-fragment-index="1">strumenti computazionali</span></h2>
 						<br/>
-						<p class="fragment" data-fragment-index="2"><span class="fragment highlight-green" data-fragment-index="2">comprendere l'algoritmo, basato sul <a href="http://wiki.tei-c.org/index.php/Textual_Variance" target="_blank" style="color:inherit;text-decoration: underline">modello di Gothenburg</a></span></p>
-						<p class="fragment" data-fragment-index="1"><span class="fragment highlight-blue" data-fragment-index="1">programmi di collazione (semi-)automatica</span></p>
+						<p class="fragment" data-fragment-index="2"><span class="fragment highlight-green" data-fragment-index="2">comprendere l'algoritmo,<br/>basato sul <a href="http://wiki.tei-c.org/index.php/Textual_Variance" target="_blank" style="color:inherit;text-decoration: underline">modello di Gothenburg</a></span></p>
+						<p class="fragment" data-fragment-index="1"><span class="fragment highlight-blue" data-fragment-index="1">programmi di collazione (semi-)automatica,<br/> qui in particolare Juxta e CollateX</span></p>
 					</section>
+					
+					<section>
+						<h3>Perché?</h3>
+						<ul>
+							<li class="fragment">decidere qual'è il programma più adeguato</li>
+							<li class="fragment">interpretare correttamente i risultati</li>
+							<li class="fragment">riconoscere e sfruttare il potenziale innovativo</li>
+						</ul>
+					</section>		
 					
 					<section>
 						<h2>Modello di Gothenburg</h2>
@@ -83,10 +96,6 @@
 				
 				<section id="ruolo-ms-base">
 					<section>
-						<h2>Il ruolo del ms. di base per la collazione</h2>
-					</section>
-					
-					<section>
 						<h2>Perché si collaziona?</h2>
 						<br/>
 						<ul>
@@ -104,21 +113,6 @@
 					</section>
 					
 					<section>
-						<h4>Attenzione!</h4>
-						<br/>
-						<p>	esemplare di riferimento per la collazione
-							<br/>
-							==
-							<br/>
-							manoscritto (ms.) di base per la collazione
-							<br/>
-							!=
-							<br/>
-							manoscritto (ms.) di base per l'edizione critica							
-						</p>
-					</section>
-					
-					<section>
 						<h3>Perché si sceglie un esemplare di riferimento?</h3>
 						<br/>
 						<ul>
@@ -129,11 +123,29 @@
 						<br/><br/>
 						<p class="fragment"><i>ragioni pratiche</i></p>
 					</section>
+					
+					<section>
+						<h4>Attenzione!</h4>
+						<br/>
+						<p>	esemplare di riferimento per la collazione
+							<br/>
+							<b>=</b>
+							<br/>
+							manoscritto (ms.) di base per la collazione
+							<br/><br/>
+							<b>&#8800;</b>
+							<br/><br/>
+							manoscritto (ms.) di base per l'edizione critica							
+						</p>
+					</section>
 				</section>
 				
 				<section>
 					<section>
-					<h4>&#200; questo il modo migliore per collazionare <br/>(quando il fine è quello di stabilire i rapporti tra i testimoni)?</h4>
+					<img src="images/aiucd2016/nuvola.png"/>
+					<h3>&#200; questo il modo migliore per collazionare</h3>
+					<p>(quando il fine è quello di stabilire i rapporti tra i testimoni)</p>
+					<h4>?</h4>
 					</section>
 					
 					<section>
@@ -149,146 +161,6 @@
 						<p>Distanza tra tutti i testimoni<p>
 						<img src="images/aiucd2016/map4.png"/>
 					</section>
-					
-					<section>
-						<h3>	cambio dell'esemplare di riferimento
-							<br/>
-							&#8595;
-							<br/><br/>
-							cambio dei risultati
-							<br/><br/>
-							<span class="fragment">
-							&#8593;
-							<br/>
-							cambio dell'ordine di inserimento</span></h3>
-					</section>
-					
-					<section>
-						
-						<table>
-						<tr>
-						<td>
-						<TABLE style="border: 1px solid #000000; border-collapse: collapse;font-size:0.7em" border="1" cellpadding="4">
- <TR>
-  <TH>A</TH>
-  <TH>B</TH>
-  <TH>C</TH>
- </TR>
- <TR>
-  <TD bgcolor="yellow">the drought</TD>
-  <TD bgcolor="yellow">the first march</TD>
-  <TD bgcolor="yellow">the first march</TD>
- </TR>
- <TR>
-  <TD bgcolor="grey">of</TD>
-  <TD bgcolor="grey">of</TD>
-  <TD bgcolor="grey">of</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">march</TD>
-  <TD bgcolor="yellow">drought pierced</TD>
-  <TD bgcolor="yellow">drought</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">hath perced</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">hath perced</TD>
- </TR>
- <TR>
-  <TD bgcolor="grey">to the root</TD>
-  <TD bgcolor="grey">to the root</TD>
-  <TD bgcolor="grey">to the root</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">and</TD>
-  <TD bgcolor="yellow">and</TD>
-  <TD bgcolor="yellow">-</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">is</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">-</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">this</TD>
-  <TD bgcolor="yellow">this</TD>
-  <TD bgcolor="yellow">-</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">the right the
-drought of march
-hath</TD>
-  <TD bgcolor="yellow">is the</TD>
-  <TD bgcolor="yellow">-</TD>
- </TR>
-</TABLE>
-
-						</td>
-						<td>
-		<TABLE style="border: 1px solid #000000; border-collapse: collapse;font-size:0.7em" border="1" cellpadding="4">
- <TR>
-  <TH>B</TH>
-  <TH>C</TH>
-  <TH>A</TH>
- </TR>
- <TR>
-  <TD bgcolor="yellow">the first march of</TD>
-  <TD bgcolor="yellow">the first march of</TD>
-  <TD bgcolor="yellow">the</TD>
- </TR>
- <TR>
-  <TD bgcolor="grey">drought</TD>
-  <TD bgcolor="grey">drought</TD>
-  <TD bgcolor="grey">drought</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">pierced</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">of march</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">hath perced</TD>
-  <TD bgcolor="yellow">hath perced</TD>
- </TR>
- <TR>
-  <TD bgcolor="grey">to the root</TD>
-  <TD bgcolor="grey">to the root</TD>
-  <TD bgcolor="grey">to the root</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">and</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">and</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">is</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">this</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">this</TD>
- </TR>
- <TR>
-  <TD bgcolor="yellow">is the</TD>
-  <TD bgcolor="yellow">-</TD>
-  <TD bgcolor="yellow">the right the
-drought of march
-hath</TD>
- </TR>
-</TABLE>
-						</td>
-						</tr>
-						</table>
-
-					</section>
-					
-					<section>
-						<h3><a href="https://docs.google.com/spreadsheets/d/18IUAPzT72LO7GnotrryP1aB3tjDNufA2_Ys4Gi2rYYo/edit?usp=sharing" target="_blank">Esempio 2</a></h3>
-					</section>
-					
 				</section>
 				
 				<section id="different_alignment">
@@ -434,6 +306,17 @@ hath</TD>
 					</section>
 					
 					<section>
+						<p>Distanza tra i testimoni e l'esemplare di riferimento</p>
+						<img src="images/aiucd2016/map3.png"/>
+					</section>
+					
+					<section>
+						<p>Distanza tra tutti i testimoni<p>
+						<img src="images/aiucd2016/map4.png"/>
+						<h3>Allineamento multiplo</h3>
+					</section>
+					
+					<section>
 						<h2>Allineamento multiplo progressivo</h2>
 						<i>multiple progressive alignment</i>
 						<br/><br/><br/>
@@ -512,8 +395,135 @@ hath</TD>
 					</section>
 					
 					<section>
-						<h3>... allineamento multiplo<br/>non progressivo ...</h3>
-						<a href="http://gsp.tamu.edu/picxaa/">PicXAA</a>
+						<h3>Allineamento multiplo<br/>non progressivo</h3>
+						Es. <a href="http://gsp.tamu.edu/picxaa/">PicXAA</a>
+					</section>
+				</section>
+				
+				<section>		
+					<section>
+						<table>
+						<tr>
+						<td>
+						<TABLE style="border: 1px solid #000000; border-collapse: collapse;font-size:0.7em" border="1" cellpadding="4">
+ <TR>
+  <TH>A</TH>
+  <TH>B</TH>
+  <TH>C</TH>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">the drought</TD>
+  <TD bgcolor="yellow">the first march</TD>
+  <TD bgcolor="yellow">the first march</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="grey">of</TD>
+  <TD bgcolor="grey">of</TD>
+  <TD bgcolor="grey">of</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">march</TD>
+  <TD bgcolor="yellow">drought pierced</TD>
+  <TD bgcolor="yellow">drought</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">hath perced</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">hath perced</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="grey">to the root</TD>
+  <TD bgcolor="grey">to the root</TD>
+  <TD bgcolor="grey">to the root</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">and</TD>
+  <TD bgcolor="yellow">and</TD>
+  <TD bgcolor="yellow">-</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">is</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">-</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">this</TD>
+  <TD bgcolor="yellow">this</TD>
+  <TD bgcolor="yellow">-</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">the right the
+drought of march
+hath</TD>
+  <TD bgcolor="yellow">is the</TD>
+  <TD bgcolor="yellow">-</TD>
+ </TR>
+</TABLE>
+
+						</td>
+						<td>
+		<TABLE style="border: 1px solid #000000; border-collapse: collapse;font-size:0.7em" border="1" cellpadding="4">
+ <TR>
+  <TH>B</TH>
+  <TH>C</TH>
+  <TH>A</TH>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">the first march of</TD>
+  <TD bgcolor="yellow">the first march of</TD>
+  <TD bgcolor="yellow">the</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="grey">drought</TD>
+  <TD bgcolor="grey">drought</TD>
+  <TD bgcolor="grey">drought</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">pierced</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">of march</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">hath perced</TD>
+  <TD bgcolor="yellow">hath perced</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="grey">to the root</TD>
+  <TD bgcolor="grey">to the root</TD>
+  <TD bgcolor="grey">to the root</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">and</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">and</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">is</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">this</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">this</TD>
+ </TR>
+ <TR>
+  <TD bgcolor="yellow">is the</TD>
+  <TD bgcolor="yellow">-</TD>
+  <TD bgcolor="yellow">the right the
+drought of march
+hath</TD>
+ </TR>
+</TABLE>
+						</td>
+						</tr>
+						</table>
+
+					</section>
+					
+					<section>
+						<h3><a href="https://docs.google.com/spreadsheets/d/18IUAPzT72LO7GnotrryP1aB3tjDNufA2_Ys4Gi2rYYo/edit?usp=sharing" target="_blank">Esempio 2</a></h3>
 					</section>
 				</section>
 				
